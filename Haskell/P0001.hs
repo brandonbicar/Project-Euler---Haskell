@@ -1,1 +1,1 @@
-p1 = sum $ filter (\x -> x `mod` 3 == 0 || x `mod` 5 == 0) [0..999]
+p1 = sum [x | x <- [0..999], x `mod` 3 == 0 || x `mod` 5 == 0]
